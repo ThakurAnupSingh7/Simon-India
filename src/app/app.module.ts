@@ -32,6 +32,7 @@ import { LeaveAdjustmentComponent } from './Configurations/leave-adjustment/leav
 import { ManagerMappingComponent } from './Configurations/manager-mapping/manager-mapping.component';
 import { ShiftManagementComponent } from './Configurations/shift-management/shift-management.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './Layout/material.module';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
