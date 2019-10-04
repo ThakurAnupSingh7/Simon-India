@@ -1,13 +1,27 @@
 <app-navbar></app-navbar>
-
 <div class="row">
-  
-<div class="col-md-4">
-<app-side-navbar></app-side-navbar>
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <div class="example-button-row">
+            <button mat-raised-button>Basic</button>
+            <span class="example-spacer"></span>
+            <button mat-raised-button color="primary">Primary</button>
+            <span class="example-spacer"></span>
+            <button mat-raised-button color="accent">Accent</button>
+            <span class="example-spacer"></span>
+            <button mat-raised-button color="warn">Warn</button>
+            <span class="example-spacer"></span>
+            <button mat-raised-button disabled>Disabled</button>
+            <span class="example-spacer"></span>
+            <a mat-raised-button routerLink=".">Link</a>
+        </div>
+    </div>
 </div>
-
-<div class="col-md-8">
- <router-outlet></router-outlet>
-</div>
-
+<div class="row">
+    <div class="col-md-4">
+        <app-side-navbar></app-side-navbar>
+    </div>
+    <div class="col-md-8">
+        <router-outlet></router-outlet>
+    </div>
 </div>
