@@ -30,7 +30,7 @@ import { ShiftManagementComponent } from './Configurations/shift-management/shif
 const routes: Routes = [
 
   //Employee-Information
-{path:'', redirectTo:'PersionalInformationComponent',pathMatch:'full', },
+{path:'', redirectTo:'Persional-Information',pathMatch:'full', },
 {path:'Persional-Information', component:PersionalInformationComponent},
 {path:'Official-Information', component:OfficialInformationComponent},
 
