@@ -1,3 +1,23 @@
-p{
-    text-align: center;
+mat-panel-description{
+    flex-flow: row-reverse;
+
+}
+
+mat-panel-title{
+    font-size:20px;
+    color: white;
+}
+
+.material-icons{
+    color: white;
+}
+
+mat-expansion-panel{
+    background: #175aa1;
+    color: white;
+}
+
+li{
+    padding: 17px;
+    font-size: 18px;
 }

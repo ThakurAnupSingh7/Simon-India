@@ -34,12 +34,15 @@ import { ShiftManagementComponent } from './Configurations/shift-management/shif
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './Layout/material.module';
 
+
+import {MatExpansionModule} from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SideNavbarComponent,
-   
+    PersionalInformationComponent,
     OfficialInformationComponent,
     LeaveApplicationComponent,
     LeaveBalanceComponent,
@@ -65,15 +68,21 @@ import { MaterialModule } from './Layout/material.module';
     LeaveAdjustmentComponent,
     ManagerMappingComponent,
     ShiftManagementComponent,
-    PersionalInformationComponent,
+   
+    
     
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
+    MatExpansionModule,
+    BrowserAnimationsModule
+=======
     BrowserAnimationsModule,
     MaterialModule
+>>>>>>> master
   ],
   providers: [],
   bootstrap: [AppComponent]
