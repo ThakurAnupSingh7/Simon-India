@@ -36,6 +36,7 @@ import { MaterialModule } from './Layout/material.module';
 
 
 import {MatExpansionModule} from '@angular/material/expansion';
+import { ButtonHeaderComponent } from './Layout/button-header/button-header.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     LeaveAdjustmentComponent,
     ManagerMappingComponent,
     ShiftManagementComponent,
+    ButtonHeaderComponent,
    
     
     
@@ -76,13 +78,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
     MatExpansionModule,
-    BrowserAnimationsModule
-=======
     BrowserAnimationsModule,
     MaterialModule
->>>>>>> master
   ],
   providers: [],
   bootstrap: [AppComponent]
