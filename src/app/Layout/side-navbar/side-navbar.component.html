@@ -1,107 +1,121 @@
-<mat-accordion>
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
+<div class="of-disp">
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+        <mat-expansion-panel-header>
             <mat-panel-title>
-             Employee Information
+              Employee Information
             </mat-panel-title>
             <mat-panel-description>
-                    <i class="material-icons">account_circle</i>
+              <img src="assets/image/person-man.png" alt="employee-info" class="avatar">
             </mat-panel-description>
           </mat-expansion-panel-header>
-        
+    
           <ul>
-              <li routerLink="/Persional-Information">Persional Information</li>
-              <li routerLink="/Official-Information">Official Information</li>
+            <li routerLink="/Persional-Information">Persional Information</li>
+            <li routerLink="/Official-Information">Official Information</li>
+          </ul>  
+      <mat-action-row>
+        <button  mat-raised-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+              Leave Management
+            </mat-panel-title>
+            <mat-panel-description>
+                <img src="assets/image/leave-icon-0.jpg" alt="employee-info" class="avatar">
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <ul>
+            <li routerLink="/Leave-Application">Leave Application</li>
+            <li routerLink="/Leave-Balance">Leave Balance</li>
+            <li routerLink="/Leave-Details">Leave Details</li>
+            <li routerLink="/Availed-Leave">Availed Leave</li>
+            <li routerLink="/LeavePlan">Leave Plan</li>
+            <li routerLink="/Calender-Holidays">Calender Holidays</li>
+            <li routerLink="/In-Out-Logs">In Out Logs</li>
           </ul>
-         
-        </mat-expansion-panel>
-        
-        <mat-expansion-panel hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    Leave Management
-                  </mat-panel-title>
-                  <mat-panel-description>
-                          <i class="material-icons"> description </i>
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                
-                <ul>
-                <li routerLink="/Leave-Application">Leave Application</li>
-               <li routerLink="/Leave-Balance">Leave Balance</li>
-               <li routerLink="/Leave-Details">Leave Details</li>
-               <li routerLink="/Availed-Leave">Availed Leave</li>
-               <li routerLink="/LeavePlan">Leave Plan</li>
-               <li routerLink="/Calender-Holidays">Calender Holidays</li>
-               <li routerLink="/In-Out-Logs">In Out Logs</li>
-                    </ul>
-              </mat-expansion-panel>
+      <mat-action-row>
+        <button  mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+        <button  mat-raised-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+              Timesheet Management
+            </mat-panel-title>
+            <mat-panel-description>
+                <img src="assets/image/Timesheet-Management.png" alt="employee-info" class="avatar">
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <ul>
+            <li routerLink="/Timesheet">Timesheet</li>
+            <li routerLink="/Approved-Timesheet">Approved Timesheet</li>
+            <li routerLink="/Timesheet-Approval">Timesheet Approval</li>
+            <li routerLink="/Timesheet-Filters">Timesheet Filters</li>
+            <li routerLink="/Deputation-Details">Deputation-Details</li>
+          </ul>
+      <mat-action-row>
+        <button  mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+        <button  mat-raised-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
 
-         <mat-expansion-panel hideToggle>
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>
-                        Timesheet Management
-                      </mat-panel-title>
-                      <mat-panel-description>
-                              <i class="material-icons">access_time </i>
-                      </mat-panel-description>
-                    </mat-expansion-panel-header>
-                    
-                    <ul>
-                            <li routerLink="/Timesheet">Timesheet</li>
-                           <li routerLink="/Approved-Timesheet">Approved Timesheet</li>
-                           <li routerLink="/Timesheet-Approval">Timesheet Approval</li>
-                           <li routerLink="/Timesheet-Filters">Timesheet Filters</li>
-                           <li routerLink="/Deputation-Details">Deputation-Details</li>
-                        </ul>
-                 </mat-expansion-panel>
+    <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+              Project Management
+            </mat-panel-title>
+            <mat-panel-description>
+                <img src="assets/image/_project_management_767510.png" alt="employee-info" class="avatar">
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <ul>
+            <li routerLink="/Project-Details">Project Details</li>
+            <li routerLink="/DpCodes-Management">DP Codes Management</li>
+            <li routerLink="/Dpr-Management">DPR Management</li>
+            <li routerLink="/Discipline-Mapping">Discipline Mapping</li>
+            <li routerLink="/Department-Mapping">Department-Mapping</li>
+            <li routerLink="/Approved-Timesheet">Approved Timesheet</li>
+            <li routerLink="/Emp-Dpr-Mapping">Emp-DPR-Mapping</li>
+            <li routerLink="/Project-Reports">Project Reports</li>
+          </ul>
+      <mat-action-row>
+        <button  mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+        <button  mat-raised-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
 
-        <mat-expansion-panel hideToggle>
-                        <mat-expansion-panel-header>
-                          <mat-panel-title>
-                            Project Management
-                          </mat-panel-title>
-                          <mat-panel-description>
-                                  <i class="material-icons">
-                                        assignment_ind
-                                          </i>
-                          </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        
-                        <ul>
-                                <li routerLink="/Project-Details">Project Details</li>
-                               <li routerLink="/DpCodes-Management">DP Codes Management</li>
-                               <li routerLink="/Dpr-Management">DPR Management</li>
-                               <li routerLink="/Discipline-Mapping">Discipline Mapping</li>
-                               <li routerLink="/Department-Mapping">Department-Mapping</li>
-                               <li routerLink="/Approved-Timesheet">Approved Timesheet</li>
-                               <li routerLink="/Emp-Dpr-Mapping">Emp-DPR-Mapping</li>
-                               <li routerLink="/Project-Reports">Project Reports</li>
-                            </ul>
-         </mat-expansion-panel>
-
-      <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                              <mat-panel-title>
-                                Configuration
-                              </mat-panel-title>
-                              <mat-panel-description>
-                                      <i class="material-icons">spa </i>
-                              </mat-panel-description>
-                            </mat-expansion-panel-header>
-
-                        <ul>
-                            <li routerLink="/Leave-Type-Management">Leave Type Management</li>
-                            <li routerLink="/Company-Leave-Calender">Company Leave Calender</li>
-                            <li routerLink="/Leave-Adjustment">Leave Adjustment</li>
-                            <li routerLink="/Manager-Mapping">Manager Mapping</li>
-                            <li routerLink="/Shift-Management">Shift Management</li>
-                        </ul>    
-       </mat-expansion-panel>          
-
-      </mat-accordion>
-      
-      
-      <!-- Copyright 2019 Google Inc. All Rights Reserved.
-          Use of this source code is governed by an MIT-style license that
-          can be found in the LICENSE file at http://angular.io/license -->
+    <mat-expansion-panel [expanded]="step === 4" (opened)="setStep(4)" hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+              Configuration
+            </mat-panel-title>
+            <mat-panel-description>
+                <img src="assets/image/503e6b919c951b8fe098bf894c477997-cogwheels-circle-icon-by-vexels.png" alt="employee-info" class="avatar">
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <ul>
+            <li routerLink="/Leave-Type-Management">Leave Type Management</li>
+            <li routerLink="/Company-Leave-Calender">Company Leave Calender</li>
+            <li routerLink="/Leave-Adjustment">Leave Adjustment</li>
+            <li routerLink="/Manager-Mapping">Manager Mapping</li>
+            <li routerLink="/Shift-Management">Shift Management</li>
+          </ul>
+      <mat-action-row>
+        <button  mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+        <button  mat-raised-button color="primary" (click)="nextStep()">End</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  
+  </mat-accordion>
+  </div>
+  

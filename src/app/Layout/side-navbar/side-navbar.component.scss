@@ -1,23 +1,62 @@
-mat-panel-description{
-    flex-flow: row-reverse;
-
+.of-disp {
+  margin-top: 20px;
+}
+li:focus,li:active , li:hover {
+  background: rgb(197, 108, 0) !important;
+  outline: none;
+}
+// mat-panel-description {
+//   flex-flow: row-reverse;
+// }
+.mat-expansion-panel-header.mat-expanded:focus, .mat-expansion-panel-header.mat-expanded:hover {
+    background: rgb(51, 115, 235) !important;
+}
+.mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused.example-headers-align
+ .mat-expansion-panel-header.cdk-program-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+    background: rgb(51, 115, 235) !important;
+}
+mat-panel-title {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  line-height: 3;
+}
+.mat-expansion-panel-header {
+  background: rgb(100, 149, 237);
+  border-radius: 0px;
 }
 
-mat-panel-title{
-    font-size:20px;
-    color: white;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 12px 30px;
+    background: darkorange;
+    cursor: pointer;
+  }
+}
+.avatar{
+    width: 40px;
+    height: auto;
+}
+.mat-action-row {
+    background: rgb(100, 149, 237);
 }
 
-.material-icons{
-    color: white;
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
 }
 
-mat-expansion-panel{
-    background: #175aa1;
-    color: white;
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+  flex: initial;
 }
 
-li{
-    padding: 17px;
-    font-size: 18px;
+mat-form-field {
+  margin-right: 12px;
 }

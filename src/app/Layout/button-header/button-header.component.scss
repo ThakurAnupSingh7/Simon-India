@@ -1,7 +1,11 @@
 .example-spacer {
-    flex: 1 1 auto;
-  }
+  flex: 1 1 auto;
+}
 
-  .row{
-    margin: 0;
-  }
+.row {
+  margin: 0;
+}
+.mat-raised-button {
+  float: right;
+  margin:0 12px;
+}
