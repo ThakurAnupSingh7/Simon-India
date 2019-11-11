@@ -1,0 +1,35 @@
+.top{
+    background-image: linear-gradient(to bottom right, #efa0e2, #b2ffed);
+}
+
+.row{
+    margin: 0px;
+}
+
+h3{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: auto;
+    background: dodgerblue;
+    padding: 12px;
+    color: white;
+}
+
+.table{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+thead{
+    text-align: center;
+    background: slateblue;
+    color: white;
+}
+
+
+tbody{
+    color: #013a0e;
+    background: #e5e5ff;
+    text-align: center;
+    font-size: 14px;
+}
+

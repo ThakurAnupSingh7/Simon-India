@@ -1,1 +1,127 @@
-<p>leave-application works!</p>
+<mat-card class="top">
+        <form class="example-form">
+   <div class="row">
+       <div class="col-md-3">
+            
+            <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Enter Employee No." value="10134">
+                  </mat-form-field>
+       </div>
+       <div class="col-md-3">
+            <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Enter Employee Name" value="Anuj Singh">
+                    </mat-form-field>
+        </div>
+        <div class="col-md-3">
+                <mat-form-field>
+                        <mat-label>Leave Category</mat-label>
+                        <mat-select>
+                          <mat-option value="casual">Casual</mat-option>
+                          <mat-option value="sick">Sick</mat-option>
+                          <mat-option value="pl">PL</mat-option>
+                          <mat-option value="maternity">Maternity</mat-option>
+                          <mat-option value="paternity">Paternity</mat-option>
+                          <mat-option value="other">Other</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+            </div>
+            <div class="col-md-3">
+                    <mat-form-field>
+                            <mat-label>Leave Type</mat-label>
+                            <mat-select>
+                              <mat-option value="half day">Half Day</mat-option>
+                              <mat-option value="full day">Full Day</mat-option>
+                             </mat-select>
+                          </mat-form-field>
+                </div>
+   </div>
+
+<br>
+   <div class="row">
+<div class="col-md-4">
+        <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Start Date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+</div>
+
+<div class="col-md-4">
+        <mat-form-field>
+                <input matInput [matDatepicker]="picker1" placeholder="End Date">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+              </mat-form-field>
+    </div>
+
+    <div class="col-md-4">
+        <mat-form-field>
+    <mat-label>Leave  Approver</mat-label>
+    <mat-select>
+      <mat-option value="atul">Atul Singh</mat-option>
+      <mat-option value="ramesh">Ramesh</mat-option>
+      <mat-option value="sanjay">Sanjay Singh</mat-option>
+     </mat-select>
+  </mat-form-field>
+        </div>
+
+   </div>
+
+</form>
+</mat-card>
+<br>
+<h3>GRIDS LEAVE APPLYING INFORMATION</h3>
+
+        <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>SDate</th>
+                    <th>EDate</th><th>Leave Category </th>
+                    <th>Leave Type</th> <th>Approver ID</th> <th>Approver Name</th><th>Leave Status</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>22/10/2019</td>
+                    <td>27/10/2019</td>
+                    <td>Other</td>
+                    <td>Full Day</td>
+                    <td>15190</td>
+                    <td>Ramesh Singh</td>
+                    <td>Confirm</td>
+                  </tr>
+
+                  <tr>
+                        <td>22/10/2019</td>
+                        <td>27/10/2019</td>
+                        <td>Other</td>
+                        <td>Full Day</td>
+                        <td>15190</td>
+                        <td>Ramesh Singh</td>
+                        <td>Confirm</td>
+                      </tr>
+
+                      <tr>
+                            <td>22/10/2019</td>
+                            <td>27/10/2019</td>
+                            <td>Other</td>
+                            <td>Full Day</td>
+                            <td>15190</td>
+                            <td>Ramesh Singh</td>
+                            <td>Confirm</td>
+                          </tr>
+
+                          <tr>
+                                <td>22/10/2019</td>
+                                <td>27/10/2019</td>
+                                <td>Other</td>
+                                <td>Full Day</td>
+                                <td>15190</td>
+                                <td>Ramesh Singh</td>
+                                <td>Confirm</td>
+                              </tr>
+                 
+                </tbody>
+              </table>
+
